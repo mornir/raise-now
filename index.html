@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>RaiseNow</title>
+  </head>
+  <style>
+    :root {
+      --c-primary: blue;
+    }
+
+    .title-1 {
+      --c-title-color: red;
+      color: var(--c-title-color);
+    }
+
+    .title-2 {
+      color: var(--c-primary);
+    }
+  </style>
+  <body>
+    <h1 class="title-1">I should be red</h1>
+    <h2 class="title-2">I should be blue</h2>
+    <div class="rnw-widget-container"></div>
+
+    <script src="https://tamaro.raisenow.com/verei-45fb/latest/widget.js"></script>
+    <script>
+      window.rnw.tamaro.runWidget(".rnw-widget-container")
+    </script>
+  </body>
+</html>
